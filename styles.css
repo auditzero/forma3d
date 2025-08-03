@@ -297,8 +297,9 @@
   .arrow {
     position: absolute;
     bottom: 10px;
-    left: 49%;
+
     transform: translateX(-50%);
+    
   }
   
 /* DRUK STYLE PHOTO */
@@ -435,34 +436,7 @@ footer {
   transition: 0.3s ease;
   border-radius: 2px;
 }
-/* Псевдоелементи — верхня і нижня лінії */
-.burger::before,
-.burger::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: red;
-  transition: 0.3s ease;
-  opacity: 0; /* сховані за замовчуванням */
-}
 
-/* Верхня лінія */
-.burger::before {
-  top: 61px;
-}
-
-/* Нижня лінія */
-.burger::after {
-  bottom: -234px;
-}
-
-/* Коли бургер активний — показуємо лінії */
-.burger.active::before,
-.burger.active::after {
-  opacity: 1;
-}
 
 /* Анімація хрестика */
 .burger.active span:first-child {
